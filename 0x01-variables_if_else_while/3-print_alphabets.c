@@ -21,14 +21,12 @@ int main(void)
 		c++;
 	}
 
-	char ch = 'A';
+	c = 'A';
 
-	int j;
-
-	for (j = 0; j < 26; j++)
+	for (i = 0; i < 26; i++)
 	{
-		putchar(ch);
-		ch++;
+		putchar(c);
+		c++;
 	}
 
 
