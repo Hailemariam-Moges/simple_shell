@@ -13,14 +13,17 @@ int main(void)
 	char c = 'a';
 
 
-	char ch = 'A';
-
 	int i;
 
 	for (i = 0; i < 26; i++)
 	{
 		putchar(c);
 		c++;
+	}
+
+	ch = 'A';
+	for (i = 0; i < 26; i++)
+	{
 		putchar(ch);
 		ch++;
 	}
