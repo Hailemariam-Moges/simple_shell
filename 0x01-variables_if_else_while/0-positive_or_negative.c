@@ -22,13 +22,13 @@ int main(void)
 		/* here if else statements are presented */
 
 		if (n > 0)
-			printf("%f", &n, "is positive\n");
+			printf("%i is positive\n", n);
 
-		if (n == 0)
-			printf("%f", &n, "is zero\n");
+		else if (n == 0)
+			printf("%i is zero\n", n);
 
 		else
-			printf("%f", &n. "is negative\n");
+			printf("%i is negative\n", n);
 
 		return (0);
 
