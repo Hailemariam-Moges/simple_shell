@@ -21,10 +21,10 @@ int main(void)
 
 		/* here if else statements are presented */
 
-		if n > 0
+		if (n > 0)
 			printf("%f", &n, "is positive\n");
 
-		if n == 0
+		if (n == 0)
 			printf("%f", &n, "is zero\n");
 
 		else
