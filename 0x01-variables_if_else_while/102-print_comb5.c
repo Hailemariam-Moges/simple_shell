@@ -53,6 +53,7 @@ int main(void)
 			}
 		f++;
 		}
+	}
 
 	putchar('\n');
 
