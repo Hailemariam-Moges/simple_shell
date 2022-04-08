@@ -11,17 +11,18 @@ int main(void)
 
 {
 	char c = 'a';
+	int i;
 
 
-	for (int i = 1; i <= 26; i++)
-		(
+	for (i = 1; i <= 26; i++)
+	{
 		putchar(c);
 		c++;
-
-		 )
+	}
 
 
 	putchar('\n');
+
 	return (0);
 
 
