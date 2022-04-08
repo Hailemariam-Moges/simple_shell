@@ -11,7 +11,6 @@
 int main(void)
 
 {
-
 	int c;
 
 	int d;
@@ -45,18 +44,18 @@ int main(void)
 							putchar(',');
 							putchar(' ');
 						}
-					c++;
 					}
-				d++;
+					c++;
 				}
-			e++;
+				d++;
 			}
-		f++;
+			e++;
 		}
+		f++;
 	}
 
 	putchar('\n');
 
 	return (0);
 
-}
+ }
