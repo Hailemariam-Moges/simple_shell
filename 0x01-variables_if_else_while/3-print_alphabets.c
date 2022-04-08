@@ -20,8 +20,9 @@ int main(void)
 	for (i = 0; i < 26; i++)
 	{
 		putchar(c);
+		c++;
 		putchar(ch);
-		c++, ch++;
+		ch++;
 	}
 
 
