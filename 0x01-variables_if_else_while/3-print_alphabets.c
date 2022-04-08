@@ -21,7 +21,7 @@ int main(void)
 		c++;
 	}
 
-	ch = 'A';
+	char ch = 'A';
 	for (i = 0; i < 26; i++)
 	{
 		putchar(ch);
