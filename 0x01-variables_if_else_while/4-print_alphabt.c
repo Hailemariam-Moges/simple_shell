@@ -14,14 +14,14 @@ int main(void)
 
 	int i;
 
-	while (c != q || e)
-	{
-		for (i = 0; i < 26; i++)
+	for (i = 0; i < 26; i++)
 		{
+			if (c != q || e)
+			{
 			putchar(c);
 			c++;
+			}
 		}
-	}
 
 
 		putchar(c);
