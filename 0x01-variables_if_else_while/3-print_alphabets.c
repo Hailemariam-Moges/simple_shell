@@ -22,7 +22,10 @@ int main(void)
 	}
 
 	char ch = 'A';
-	for (i = 0; i < 26; i++)
+
+	int j;
+
+	for (j = 0; j < 26; j++)
 	{
 		putchar(ch);
 		ch++;
