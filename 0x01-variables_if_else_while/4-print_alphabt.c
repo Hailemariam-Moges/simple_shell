@@ -15,17 +15,17 @@ int main(void)
 	int i;
 
 	for (i = 0; i < 26; i++)
+	{
+		if (c != 'q' && c != 'e')
 		{
-			if (c != 'q' && c != 'e')
-			{
 			putchar(c);
-			}
-			c++;
 		}
+		c++;
+	}
 
 
-		putchar(c);
-		return (0);
+	putchar(c);
+	return (0);
 
 
 
