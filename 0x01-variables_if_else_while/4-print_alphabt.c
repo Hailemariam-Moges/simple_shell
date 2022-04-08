@@ -22,11 +22,11 @@ int main(void)
 		}
 		c++;
 	}
-
-
+	
+	
+	
 	putchar(c);
 	return (0);
-
 
 
 }
