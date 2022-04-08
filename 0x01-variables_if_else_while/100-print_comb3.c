@@ -15,14 +15,14 @@ int main(void)
 	while (dig <= 9)
 	{
 		comb = 0;
-		while (combg <= 9)
+		while (comb <= 9)
 		{
 			if (dig != comb && dig < comb)
 			{
 				putchar('0' + dig);
 				putchar('0' + comb);
 
-				if (comb + dog != 17)
+				if (comb + dig != 17)
 				{
 					putchar(',');
 					putchar(' ');
