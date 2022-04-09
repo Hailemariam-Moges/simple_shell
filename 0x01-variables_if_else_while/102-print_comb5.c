@@ -45,17 +45,17 @@ int main(void)
 							putchar(' ');
 						}
 					}
-					c++;
+				c++;
 				}
-				d++;
+			d++;
 			}
-			e++;
+		e++;
 		}
-		f++;
+	f++;
 	}
 
 	putchar('\n');
 
 	return (0);
 
- }
+}
