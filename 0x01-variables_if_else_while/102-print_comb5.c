@@ -22,7 +22,6 @@ int main(void)
 		{
 			c = j / 10; /* tens secondnum */
 			d = j % 10; /* unit secondnum */
-			j++;
 			if (a < c || (a == c && b < d))
 			{
 				putchar(a + '0');
