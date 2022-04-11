@@ -18,10 +18,12 @@ int main(void)
 	{
 		a = i / 10; /* tens firstnum */
 		b = i % 10; /* unit firstnum */
+		i++;
 		while (j < 100)
 		{
 			c = j / 10; /* tens secondnum */
 			d = j % 10; /* unit secondnum */
+			j++;
 			if (a < c || (a == c && b < d))
 			{
 				putchar(a + '0');
