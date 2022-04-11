@@ -14,7 +14,7 @@ int main(void)
 	int a, b, c, d;
 
 
-	for (i = 0; i < 100, i++)
+	for (i = 0; i < 100; i++)
 	{
 		a = i / 10; /* tens firstnum */
 		b = i % 10; /* unit firstnum */
