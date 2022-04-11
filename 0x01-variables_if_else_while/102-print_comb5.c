@@ -9,17 +9,16 @@
 int main(void)
 
 {
-	int i = 0, j = 0;
+	int i, j;
 
 	int a, b, c, d;
 
 
-	while (i < 100)
+	for (i = 0; i < 100, i++)
 	{
 		a = i / 10; /* tens firstnum */
 		b = i % 10; /* unit firstnum */
-		i++;
-		while (j < 100)
+		for (j = 0; j < 100; j++)
 		{
 			c = j / 10; /* tens secondnum */
 			d = j % 10; /* unit secondnum */
