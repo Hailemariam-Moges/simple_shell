@@ -16,6 +16,7 @@
 #define COMMAND_SEPARATOR ";\n"
 #define SEPARATORS " \n"
 #define PROMPT "$ "
+#define DELIM " \t\r\n\a"
 
 char *search_path(info_t *info, list_t *path);
 
@@ -165,6 +166,7 @@ char **_parsingPathEnvironment(appData_t *prmData);
 void _printenv(environment_t *prmEnviron);
 int _putchar(char prmChar);
 int _puts(char *prmStr);
+char *_strtok(char *str, const char *tok);
 void *_realloc(void *prmPtr, unsigned int prmOldSize, unsigned int prmNewSize);
 void _setenv(environment_t *prmEnviron, char *prmName,
 		char *prmValue, int prmOverwrite);
