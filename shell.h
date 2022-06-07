@@ -17,6 +17,7 @@
 #define SEPARATORS " \n"
 #define PROMPT "$ "
 
+char *search_path(info_t *info, list_t *path);
 
 @environ: environment
 extern char **environ;
