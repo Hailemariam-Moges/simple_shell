@@ -74,6 +74,25 @@ typedef struct errorMessage_s
 } errorMessage_t;
 
 /**
+ * struct alias_s - A new struct defining aliases.
+ * @name: The name of the alias.
+ * @value: The value of the alias.
+ * @next: A pointer to another struct alias_s.
+ */
+typedef struct alias_s
+{
+	char *name;
+	char *value;
+	struct alias_s *next;
+} alias_t;
+
+/* Global aliases linked list */
+alias_t *aliases;
+
+/* Linkedlist Helpers */
+alias_t *add_alias_end(alias_t **head, char *name, char *value);
+
+/**
  * struct customCommand_s - struct conversion to function
  *
  * @commandName: flag string
