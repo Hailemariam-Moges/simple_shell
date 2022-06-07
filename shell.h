@@ -122,6 +122,7 @@ int _checkSeparators(char prmChar, char *prmSeparators);
 char *_cleanString(char *prmString);
 environment_t *_createEnvNode(char *prmGlobal);
 void _ctrlC(int prmSignal);
+char **replace_aliases(char **args);
 void _defaultHelp(char *prmCommand);
 int _deleteEnvNode(environment_t *prmHead, char *prmName);
 void _prompt(void);
@@ -168,6 +169,7 @@ void *_realloc(void *prmPtr, unsigned int prmOldSize, unsigned int prmNewSize);
 void _setenv(environment_t *prmEnviron, char *prmName,
 		char *prmValue, int prmOverwrite);
 void _setenvHelp(void);
+int shellby_alias(char **args, char __attribute__((__unused__)) **front);
 void _setEnvironment(appData_t *prmData);
 char *_strcat(char *prmDest, char *prmSrc);
 int _strcmp(char *prmString1, char *prmString2);
@@ -185,5 +187,7 @@ void _unsetenvHelp(void);
 void _unsetEnvironment(appData_t *prmData);
 char *_which(appData_t *prmData);
 int _wordNumber(char *prmString, char *prmSeparators);
-
+alias_t *add_alias_end(alias_t **head, char *name, char *value);
+void free_alias_list(alias_t *head);
+void help_alias(void);
 #endif
