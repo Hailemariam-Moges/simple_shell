@@ -141,6 +141,9 @@ char *_generateEnvGlobal(char *prmName, char *prmValue);
 void (*_getCustomFunction(char *prmCommand))(appData_t *);
 environment_t *_getenv(environment_t *prmEnviron, char *prmName);
 char *_getenvname(char *prmVariable);
+void read_file(char *filename, char **argv);
+void treat_file(char *line, int counter, FILE *fp, char **argv);
+void exit_bul_for_file(char **cmd, char *line, FILE *fd);
 char *_getenvvalue(char *prmVariable);
 int _getEnvIndex(environment_t *prmHead, char *prmName);
 environment_t *_getEnvNodeAtIndex(
