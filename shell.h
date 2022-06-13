@@ -180,6 +180,7 @@ char *_strconcat(char *prmString1, char *prmString2);
 char *_strncpy(char *prmDest, char *prmSrc, int prmLimit);
 unsigned int _strcspn(char *prmString, char *prmDeny);
 char *_strdup(char *prmString);
+void remove_comments(cmdlist_t *cmd)
 int _strlen(char *prmStr);
 char *_strstr(char *prmHaystack, char *prmNeedle, int prmBegin);
 char **_strtow(char *prmString, char *prmSeparators,
