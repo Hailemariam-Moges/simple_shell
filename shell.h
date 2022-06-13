@@ -180,6 +180,12 @@ char *_strcat(char *prmDest, char *prmSrc);
 int _strcmp(char *prmString1, char *prmString2);
 char *_strcpy(char *prmDest, char *prmSrc);
 char *_strconcat(char *prmString1, char *prmString2);
+
+void check_env(r_var **h, char *in, data_shell *data);
+int check_vars(r_var **h, char *in, char *st, data_shell *data);
+char *replaced_input(r_var **head, char *input, char *new_input, int nlen);
+char *rep_var(char *input, data_shell *datash);
+
 char *_strncpy(char *prmDest, char *prmSrc, int prmLimit);
 unsigned int _strcspn(char *prmString, char *prmDeny);
 char *_strdup(char *prmString);
